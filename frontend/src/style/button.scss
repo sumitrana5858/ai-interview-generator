@@ -1,0 +1,14 @@
+.button{
+    border:none;
+    outline:none;
+    padding-block: 0.75rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+&.primary-button{
+    background-color: #e1034d;
+    color: whitesmoke;
+}
+
+
+}
