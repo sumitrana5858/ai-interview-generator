@@ -12,9 +12,12 @@ connectDB();
 app.use(express.json());
 app.use(cookie());
 app.use(cors({
-    origin: "http://localhost:5173",
-    credentials: true
-}))
+    origin: [
+        "http://localhost:5173",
+        "https://ai-interview-generator-1-bkcc.onrender.com"
+    ],
+    credentials: true,
+}));
 dotenv.config();
 
 const authRouter = require("./routes/auth.routes");
